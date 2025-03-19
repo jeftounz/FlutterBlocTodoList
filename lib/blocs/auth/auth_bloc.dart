@@ -12,6 +12,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
   @override
   Stream<AuthState> mapEventToState(AuthEvent event) async* {
+    /*The method doesn't override an inherited method.
+Try updating this class to match the superclass, or removing the override annotation. */
     if (event is LoginEvent) {
       yield AuthLoading();
       try {
